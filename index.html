@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17793779613"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17793779613');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="دانلود رایگان کتاب زندگی آگاهانه | Conscious Living Book by Alireza Shakerinia" />
+  <meta name="keywords" content="زندگی آگاهانه, کتاب زندگی آگاهانه, واقعیت, شناخت واقعیت, علیرضا شاکری نیا, شاکری‌نیا, Conscious Living, Conscious Living Book, Reality, Understanding Reality, Alireza Shakerinia, Shakerinia" />
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="زندگی آگاهانه | Conscious Living" />
+  <meta property="og:description" content="دانلود رایگان کتاب زندگی آگاهانه (Conscious Living) نوشته علیرضا شاکری‌نیا" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.shakerinia.com" />
+  <meta property="og:site_name" content="Alireza Shakerinia" />
+  <title>علیرضا شاکری‌نیا | Alireza Shakerinia</title>
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #5a5a5a;
+      --border: #e7e7e7;
+      --btn: #1f3b66;
+      --btnText: #ffffff;
+      --btnAltBg: #eef2f8;
+      --btnAltText: #1f3b66;
+
+      /* +20% global typography scale */
+      --faName: clamp(34px, 6.6vw, 53px);
+      --enName: clamp(22px, 4.3vw, 34px);
+      --body: clamp(17px, 3.2vw, 22px);
+      --small: clamp(14px, 2.9vw, 17px);
+
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.06);
+      --maxWidth: 760px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Arabic", "Vazirmatn", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap{
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: clamp(16px, 4vw, 40px);
+    }
+
+    .card{
+      width: 100%;
+      max-width: var(--maxWidth);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 8px);
+      box-shadow: var(--shadow);
+      padding: clamp(18px, 4vw, 40px);
+      background: #fff;
+    }
+
+    header{
+      position: relative;
+      text-align: center;
+      margin-bottom: clamp(14px, 3vw, 22px);
+      /* reserve space so the name does not sit on the same row as the language button */
+      padding-top: clamp(44px, 6vw, 56px);
+    }
+
+    .lang-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 8px 12px;
+      font-size: var(--small);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--btnAltText);
+      background: var(--btnAltBg);
+    }
+
+    .lang-btn:hover{
+      background: #dde4f0;
+    }
+
+    .name-fa{
+      font-size: var(--faName);
+      font-weight: 750;
+      margin: 0;
+    }
+
+    .name-en{
+      direction: ltr;
+      font-size: clamp(24px, 4.6vw, 38px);
+      font-weight: 750;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .photo{
+      display: grid;
+      place-items: center;
+      margin: clamp(14px, 3vw, 22px) 0;
+    }
+
+    .photo img{
+      /* reduced image size */
+      width: clamp(123px, 23vw, 246px);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      cursor: default;
+    }
+
+    
+    .bio{
+      margin: 0 auto;
+      text-align: center;
+      font-size: var(--body);
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    .bio a{
+      color: var(--btn);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .downloads{
+      margin-top: clamp(18px, 4vw, 28px);
+    }
+
+    .download-title{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .title-fa{
+      text-align: center;
+      font-size: var(--body);
+      font-weight: 700;
+    }
+
+    .title-en{
+      text-align: center;
+      font-size: var(--body);
+      font-weight: 600;
+      color: var(--muted);
+      direction: ltr;
+    }
+
+    /* On larger screens, keep each title centered above its own button column */
+    @media (min-width: 680px){
+      .download-title{
+        grid-template-columns: 1fr 1fr;
+      }
+      .title-fa,
+      .title-en{
+        text-align: center;
+      }
+    }
+
+    .downloads{
+      margin-top: clamp(18px, 4vw, 28px);
+    }
+
+    .downloads h2{
+      font-size: clamp(16px, 3vw, 20px);
+      margin: 0 0 12px;
+      text-align: center;
+    }
+
+    .btns{
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr;
+      margin-top: 12px;
+    }
+
+    a.btn{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 650;
+      /* Slightly smaller, flexible font-size to avoid overflow */
+      font-size: clamp(16px, 2.9vw, 19px);
+      border: 1px solid transparent;
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+
+      /* Force single-line button text */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-primary{
+      background: var(--btn);
+      color: var(--btnText);
+      box-shadow: 0 10px 22px rgba(31,59,102,0.20);
+    }
+
+    /* Panel 2 primary buttons: different color scheme */
+    .panel-2 .btn-primary{
+      background: #2f7d6b; /* green-teal distinct from panel 1 */
+      color: #ffffff;
+      box-shadow: 0 10px 22px rgba(47,125,107,0.25);
+    }
+
+    .btn-secondary{
+      background: var(--btnAltBg);
+      color: var(--btnAltText);
+      border-color: rgba(31,59,102,0.35);
+    }
+
+    /* Disabled buttons */
+    /* Disabled buttons */
+    .btn-disabled{
+      opacity: 0.45;
+      pointer-events: none;
+      cursor: not-allowed;
+      box-shadow: none;
+
+      /* Adaptive smaller font to prevent overflow */
+      font-size: clamp(14px, 2.5vw, 17px);
+    }
+
+    @media (min-width: 680px){
+      .btns{ grid-template-columns: 1fr; }
+    }
+
+    footer{
+      margin-top: clamp(18px, 4vw, 28px);
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: var(--small);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-main{
+      text-align: center;
+    }
+
+    .footer-links{
+      text-align: center;
+    }
+
+    .footer-links a{
+      color: var(--muted);
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .panel{
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(16px, 3vw, 24px);
+    }
+
+    /* Make panels visually distinguishable */
+    .panel-1{
+      background: #fafbff;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+    }
+
+    .panel-2{
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+
+    .panel-heading{
+      text-align: center;
+      font-size: clamp(24px, 4.6vw, 34px);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    /* Match Panel 2 heading color with its buttons */
+    .panel-2 .panel-heading{
+      color: #2f7d6b;
+    }
+
+    .panel-subtitle{
+      text-align: center;
+      font-size: clamp(16px, 3vw, 20px);
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    footer{
+      margin-top: clamp(18px, 4vw, 28px);
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: var(--small);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <a class="lang-btn" href="index-fa.html" aria-label="نسخه فارسی">فارسی</a>
+        
+        <p class="name-en">Alireza Shakerinia</p>
+      </header>
+
+      <div class="photo">
+        <img src="My_Picture.jpg" alt="Author photo" loading="lazy" />
+      </div>
+
+      
+      <p class="bio" dir="ltr">Author of books on “<strong>Conscious Living</strong>”</p>
+      <p class="bio" dir="ltr">Contact: <a href="mailto:shakerinia.ar@gmail.com">shakerinia.ar@gmail.com</a></p>
+
+      <div class="downloads">
+        <!-- Panel 1 -->
+        <div class="panel panel-1">
+          <div class="panel-heading">Health Book</div>
+          <div class="panel-subtitle">Free Book Download</div>
+          <div class="btns">
+            <a class="btn btn-primary" id="btn01-health-mo-en" href="https://www.shakerinia.com/Health%20Based%20on%20Conscious%20Living%20-%20Mobile.pdf" download>Download Mobile Edition</a>
+            <a class="btn btn-primary" id="btn02-health-pr-en" href="https://www.shakerinia.com/Health%20Based%20on%20Conscious%20Living%20-%20Print.pdf" download>Download Print edition</a>
+            <a class="btn btn-primary" href="https://books2read.com/u/mYwy8o" target="_blank" rel="noopener">Get the Digital Editions</a>
+          </div>
+        </div>
+
+        <!-- Panel 2 -->
+        <div class="panel panel-2" style="margin-top:16px;">
+          <div class="panel-heading">Conscious Living Book</div>
+          <div class="panel-subtitle">Free Book Download</div>
+          <div class="btns">
+            <a class="btn btn-primary" id="btn2-download-mobile-en" href="https://www.shakerinia.com/Conscious%20Living%20Book%20-%20Mobile%20Edition.pdf" download>Download Mobile Edition</a>
+            <a class="btn btn-primary" id="btn4-download-print-en" href="https://www.shakerinia.com/Conscious%20Living%20Book%20-%20Print%20Edition.pdf" download>Download Print edition</a>
+            <a class="btn btn-primary" href="https://books2read.com/u/m0pJeY" id="btn-digital-editions" target="_blank" rel="noopener">Get the Digital Editions</a>
+          </div>
+        </div>
+
+        <!-- Other links -->
+        <div class="btns" style="margin-top:16px;">
+          <a class="btn btn-secondary" href="https://www.facebook.com/profile.php?id=61585390885286" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-main">© <span id="y"></span> Alireza Shakerinia</div>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    
+
+    // GoatCounter: track clicks on Button #2 (English Mobile Edition)
+    (function () {
+      const btn2 = document.getElementById('btn2-download-mobile-en');
+      if (btn2) {
+        btn2.addEventListener('click', function () {
+          if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+            window.goatcounter.count({
+              path: '/event/button-2-mobile-en',
+              title: 'Button 2: Download Mobile Edition'
+            });
+          }
+        });
+      }
+
+      // GoatCounter: track clicks on Button #4 (English Print Edition)
+      const btn4 = document.getElementById('btn4-download-print-en');
+      if (btn4) {
+        btn4.addEventListener('click', function () {
+          if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+            window.goatcounter.count({
+              path: '/event/button-4-print-en',
+              title: 'Button 4: Download Print Edition'
+            });
+          }
+        });
+      }
+
+      // GoatCounter: track clicks on Panel 1 - Button 1 (Health / Mobile EN)
+      const btn01 = document.getElementById('btn01-health-mo-en');
+      if (btn01) {
+        btn01.addEventListener('click', function () {
+          if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+            window.goatcounter.count({
+              path: '/event/btn01-health-mo-en',
+              title: 'Panel 1: Health Based - Mobile EN'
+            });
+          }
+        });
+      }
+
+      // GoatCounter: track clicks on Panel 1 - Button 2 (Health / Print EN)
+      const btn02 = document.getElementById('btn02-health-pr-en');
+      if (btn02) {
+        btn02.addEventListener('click', function () {
+          if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+            window.goatcounter.count({
+              path: '/event/btn02-health-pr-en',
+              title: 'Panel 1: Health Based - Print EN'
+            });
+          }
+        });
+      }
+    })();
+
+    // Ensure disabled buttons (7 & 8) never overflow: shrink font-size as needed.
+    function fitOneLine(el, minPx = 12) {
+      if (!el) return;
+
+      // Reset to CSS-defined size first
+      el.style.fontSize = '';
+
+      // Only proceed if it overflows
+      const computed = window.getComputedStyle(el);
+      let fs = parseFloat(computed.fontSize);
+      if (!Number.isFinite(fs)) return;
+
+      // Guard: avoid unnecessary loops
+      const maxSteps = 20;
+      let step = 0;
+
+      // Use scrollWidth vs clientWidth for one-line overflow check
+      while (el.scrollWidth > el.clientWidth && fs > minPx && step < maxSteps) {
+        fs -= 0.5;
+        el.style.fontSize = fs + 'px';
+        step++;
+      }
+    }
+
+    function fitDisabledButtons() {
+      document.querySelectorAll('.btn.btn-disabled').forEach((el) => fitOneLine(el, 12));
+    }
+
+    // Run after layout, and on resize
+    window.addEventListener('load', () => requestAnimationFrame(fitDisabledButtons));
+    window.addEventListener('resize', () => requestAnimationFrame(fitDisabledButtons));
+  </script>
+  <script data-goatcounter="https://shakerinia.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
